@@ -275,7 +275,12 @@ body::before {
   }
 
   .site-footer {
-    padding: 0 24px 20px;
+    margin-top: 32px;
+    padding: 0; /* bird flush with right and bottom borders */
+  }
+
+  .footer {
+    padding: 0 0 20px 24px; /* left-align with page content */
   }
 
   .logo {
