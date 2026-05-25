@@ -266,8 +266,8 @@ body::before {
 /* Mobile only */
 @media (max-width: 600px) {
   body {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 22px;
+    line-height: 30px;
   }
 
   .page {
