@@ -65,7 +65,7 @@ body {
 .manifesto h2,
 .investments h2 {
   font-family: 'Instrument Serif', Georgia, serif;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 500;
   font-style: italic;
   margin-bottom: 18px;
@@ -229,14 +229,78 @@ body::before {
   left: 0;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
+/* Mobile + tablet: bird and copyright live in document flow at the bottom */
+@media (max-width: 1023px) {
   .page {
-    padding: 40px 24px;
+    padding-bottom: 16px;
+  }
+
+  .asterisk-img {
+    height: 22px;
+  }
+
+  .site-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 48px 32px;
+  }
+
+  .footer {
+    position: static;
+    padding: 0;
+  }
+
+  .sumi-bird {
+    position: static;
+    width: 160px;
+    z-index: auto;
+  }
+}
+
+/* Mobile only */
+@media (max-width: 600px) {
+  body {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .page {
+    padding: 32px 24px 16px;
+  }
+
+  .site-footer {
+    padding: 0 24px 20px;
+  }
+
+  .logo {
+    margin-bottom: 36px;
+  }
+
+  .intro {
+    margin-bottom: 40px;
+  }
+
+  .manifesto {
+    margin-bottom: 40px;
+  }
+
+  .manifesto h2,
+  .investments h2 {
+    font-size: 22px;
+  }
+
+  .manifesto-columns {
+    flex-direction: column;
   }
 
   .logo-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+    gap: 24px 20px;
+  }
+
+  .viewport-frame {
+    border-width: 10px;
   }
 }
