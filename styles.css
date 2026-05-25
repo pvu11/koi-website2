@@ -190,7 +190,7 @@ body::before {
   inset: 0;
   background-image: url('ricepaperbg.png');
   background-repeat: repeat;
-  background-size: 25% auto;
+  background-size: 350px auto;
   mix-blend-mode: multiply;
   filter: brightness(1.1);
   z-index: 0;
@@ -233,6 +233,10 @@ body::before {
 @media (max-width: 1023px) {
   .page {
     padding-bottom: 16px;
+  }
+
+  body::before {
+    filter: brightness(1.05);
   }
 
   .asterisk-img {
