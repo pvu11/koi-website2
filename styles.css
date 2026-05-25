@@ -282,6 +282,10 @@ body::before {
     margin-bottom: 36px;
   }
 
+  .logo-img {
+    height: 27px;
+  }
+
   .intro {
     margin-bottom: 40px;
   }
