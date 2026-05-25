@@ -257,9 +257,9 @@ body::before {
   }
 
   .sumi-bird {
-    position: static;
+    position: relative;
+    z-index: 1;
     width: 160px;
-    z-index: auto;
   }
 }
 
